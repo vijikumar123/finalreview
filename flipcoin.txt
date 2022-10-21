@@ -1,0 +1,23 @@
+
+public class flipcoin
+{
+public static void main(string[]args)
+{
+int head=0, tail=0;
+double h1,t1;
+system.out.print("enter the number of times you want to flip the coin:");
+int val=sc.nextlnt();
+for(inti=0;i<val;i++)
+{
+double ran=math.random();
+if(ran<0.5)
+tail++;
+else
+head++;
+}
+h1=head/(double)val*100;
+t1=tail/(double)val*100;
+system.out.println("percentage of heads:"+h1+"%");
+system.out.println("percentage of tail:"+t1+"%");
+}
+}
